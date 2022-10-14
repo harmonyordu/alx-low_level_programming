@@ -1,4 +1,4 @@
-include < stdio.h >
+#include <stdio.h>
 /**
  *main -is the begining point
  *Return: value should be zero
