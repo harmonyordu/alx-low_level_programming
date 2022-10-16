@@ -1,5 +1,6 @@
 #include<string.h>
 #include<unistd.h>
+#include<stdlib.h>
 /**
  *main-Entry point
  *Return: Always 0 (Success)
