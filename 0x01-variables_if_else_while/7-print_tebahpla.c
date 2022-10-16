@@ -1,17 +1,19 @@
 #include <stdio.h>
 /**
- *main - The first path of the program 
+ *main - The first path of the program
  *Return: Always 0 (Success)
  */
 
 int main(void)
+
 {
-char c
+char i
 
-for (c = 'z'; c >= 'a'; c--)
-
-	putchar(c);
-
+for (i = 'z'; i >= 'a'; i--)
+{
+putchar(i);
+}
 putchar('\n');
 return (0);
 }
+
