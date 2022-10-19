@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *print_alphabet_x10- The program starts here
- *Return- returns zero 0
+ *Return- returns void
  *Description- a function that prints 10 times the alphabet, in lowercase
  */
 
@@ -20,7 +20,7 @@ void print_alphabet_x10(void)
 		i++;
 		_putchar('\n');
 	}
-	return (0);
+	
 }
 
 
