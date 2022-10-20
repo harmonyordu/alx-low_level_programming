@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  *add - The function adds to value
  *@a: The first variable to be added
