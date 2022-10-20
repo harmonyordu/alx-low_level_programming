@@ -1,101 +1,67 @@
 #include "main.h"
-
 #include <stdio.h>
 
-
-
 /**
-
   *print_times_table - function to print times table
-
   *@n: The multiplying variable
-
   * Return: Always 0.
-
   */
 
 void print_times_table(int n)
 
 {
+nt num, mult, prod;
 
-	int x, y, z;
-
-
-
-	if (n >= 0 && n <= 14)
+	if (n >= 0 && n <= 15)
 
 	{
 
-		for (x = 0; x <= n; x++)
+		for (num = 0; num <= n; num++)
 
 		{
 
-			for (y = 0; y <= n; y++)
+			_putchar('0');
+
+			for (mult = 1; mult <= n; mult++)
 
 			{
 
-				z = x * y;
+				_putchar(',');
 
-				if (z > 99)
+				_putchar(' ');
+				prod = num * mult;
 
-				{
+				if (prod <= 99)
 
-					_putchar(',');
+					_putchar(' ');
 
-					_putchar(32);
+				if (prod <= 9)
 
-					_putchar((z / 100) + '0');
+					_putchar(' ');
 
-					_putchar(((z / 10) % 10) + '0');
-
-					_putchar((z % 10) + '0');
-
-				}
-
-				else if (z > 9)
+				if (prod >= 100)
 
 				{
 
-					_putchar(',');
+					_putchar((prod / 100) + '0');
 
-					_putchar(32);
-
-					_putchar(32);
-
-					_putchar(((z / 10) % 10) + '0');
-
-					_putchar((z % 10) + '0');
+					_putchar(((prod / 10)) % 10 + '0');
 
 				}
 
-				else
+				else if (prod <= 99 && prod >= 10)
 
 				{
 
-					if (y != 0)
-
-					{
-
-						_putchar(',');
-
-						_putchar(32);
-
-						_putchar(32);
-
-						_putchar(32);
-
-					}
-
-					_putchar(z + '0');
+					_putchar((prod / 10) + '0');
 
 				}
+
+				_putchar((prod % 10) + '0');
 
 			}
 
 			_putchar('\n');
-
 		}
-
 	}
-
 }
