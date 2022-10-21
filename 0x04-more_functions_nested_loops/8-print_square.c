@@ -1,15 +1,10 @@
 #include "main.h"
 
 
-
 /**
-
  * print_square - prints a square
-
  * @size: size of square
-
- * Return: nothing
-
+ * Return: returns nothing
  */
 
 
@@ -28,7 +23,7 @@ void print_square(int size)
 
 	if (size < 1)
 
-		_putchar('');
+		_putchar('\n');
 
 
 
