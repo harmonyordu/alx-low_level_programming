@@ -3,7 +3,7 @@
 
 /**
  * print_triangle - prints a triangle
- * @size: the height of the triangle.
+ * @size: The height of the triangle.
  */
 
 
@@ -34,7 +34,7 @@ void print_triangle(int size)
 
 				else
 
-					_putchar('#')
+					_putchar('#');
 
 			}
 
