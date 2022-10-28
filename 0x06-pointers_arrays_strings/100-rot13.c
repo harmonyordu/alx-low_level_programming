@@ -18,7 +18,8 @@ char *rot13(char *s)
 
 	char boolean;
 
- 	for (i = 0; s[i] != '\0'; i++)
+
+	for (i = 0; s[i] != '\0'; i++)
 
 	{
 
