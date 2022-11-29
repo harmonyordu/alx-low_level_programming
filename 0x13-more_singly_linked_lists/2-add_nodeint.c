@@ -10,6 +10,7 @@
 listint_t *createNode(const int num)
 {
 	listint_t *new;
+
 	new = malloc(sizeof(listint_t));
 
 	if (new == NULL)
@@ -19,11 +20,10 @@ listint_t *createNode(const int num)
 	new->n = num;
 	return (new);
 }
-
 /**
  * add_nodeint - This adds a new node at the beginning of a list_t list
+ * @n: numbers
  * @head: The pointer to last element
- * @n: number 
  * Return: new last element
  */
 

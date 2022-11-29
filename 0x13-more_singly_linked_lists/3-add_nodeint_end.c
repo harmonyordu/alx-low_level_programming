@@ -13,6 +13,7 @@ listint_t *createNode(const int num)
 {
 
 	listint_t *new;
+
 	new = malloc(sizeof(listint_t));
 
 	if (new == NULL)
@@ -41,13 +42,12 @@ listint_t *getLastNode(listint_t *HeadNode)
 	if (!HeadNode)
 
 		return (NULL);
-
 	if (HeadNode->next == NULL)
 
 		return (HeadNode);
 	else
-
-		return (getLastNode(HeadNode->next));
+		return
+			(getLastNode(HeadNode->next));
 }
 
 /**
